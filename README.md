@@ -16,6 +16,11 @@ EOF
 #### Edit accordingly
 See `dockercfg.env.example`
 
+#### Export variables from dockercfg.env
+```bash
+eval $(cat dockercfg.env)
+```
+
 #### Export additional variables
 ```bash
 export REGISTRY_NAME=`echo $DOCKER_REGISTRY_SERVER | sed -e 's/^http:\/\///g' -e 's/^https:\/\///g'`
