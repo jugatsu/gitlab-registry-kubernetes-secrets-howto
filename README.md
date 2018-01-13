@@ -1,20 +1,10 @@
 # Description
 Copy-Paste Ready™ how-to for using private [Gitlab Container Registry](https://docs.gitlab.com/ce/user/project/container_registry.html) with [Kubernetes](https://kubernetes.io).
 
-#### Create env file with credentials
-
+#### Copy and edit example env file accordingly
 ```bash
-cat <<EOF >dockercfg.env
-export DOCKER_REGISTRY_SERVER=<registry_url>
-export DOCKER_USER=<username>
-export DOCKER_PASSWORD=<password>
-export DOCKER_EMAIL=<email>
-export DOCKER_IMAGE_PATH=<image_path_with_tag>
-EOF
+cp dockercfg.env.example dockercfg.env
 ```
-
-#### Edit accordingly
-See [dockercfg.env.example](https://github.com/jugatsu/gitlab-registry-kubernetes-secrets-howto/blob/master/dockercfg.env.example)
 
 #### Export variables from dockercfg.env
 ```bash
