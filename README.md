@@ -14,7 +14,7 @@ EOF
 ```
 
 #### Edit accordingly
-See `dockercfg.env.example`
+See [dockercfg.env.example](https://github.com/jugatsu/gitlab-registry-kubernetes-secrets-howto/blob/master/dockercfg.env.example)
 
 #### Export variables from dockercfg.env
 ```bash
