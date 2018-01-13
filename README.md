@@ -1,5 +1,6 @@
 # Description
 Copy-Paste Ready™ how-to for using private [Gitlab Container Registry](https://docs.gitlab.com/ce/user/project/container_registry.html) with [Kubernetes](https://kubernetes.io).
+> ref: https://gist.github.com/rkuzsma/b9a0e342c56479f5e58d654b1341f01e
 
 #### Copy and edit example env file accordingly
 ```bash
