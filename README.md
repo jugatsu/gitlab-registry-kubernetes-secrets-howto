@@ -72,5 +72,7 @@ unset DOCKER_IMAGE_FULL_PATH
 ✅ Sharing the secret across multiple Kubernetes namespaces 🎉
 ```bash
 export NAMESPACE=gitlab
-kubectl get secret gitlab-registry -o yaml | sed "s/default/$NAMESPACE/g" | kubectl -n $NAMESPACE create -f -
+kubectl get secret gitlab-registry \
+  -o yaml | sed "s/default/$NAMESPACE/g" \
+  | kubectl -n $NAMESPACE create -f -
 ```
